@@ -8,6 +8,9 @@ router = {
     "password": "C1sco12345"
 }
 
+def dire_salut():
+    print("Salut, Git!")
+
 def acces_netmiko():
     with ConnectHandler(**router) as net_connect:
          print("Connected to remote router.")
@@ -27,4 +30,5 @@ def acces_netmiko():
          print("Done.")
 
 print("Hello, Git! Working on it...")
+dire_salut()
 acces_netmiko()
